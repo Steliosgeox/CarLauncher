@@ -4,6 +4,7 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
@@ -202,7 +203,7 @@ fun RpmGauge(
 fun PreviewRpmGauge() {
     com.steliosgeox.carlauncher.ui.theme.CarLauncherTheme {
         androidx.compose.foundation.layout.Box(
-            modifier = Modifier.androidx.compose.foundation.background(Color(0xFF0A0E17))
+            modifier = Modifier.background(Color(0xFF0A0E17))
         ) {
             RpmGauge(snapshot = TelemetrySnapshot(rpm = 3500f))
         }
